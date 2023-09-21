@@ -1,9 +1,33 @@
-# pacmen
-Factory for making pacmen
-You are given a starter.html code.
-When button "make one" is pressed you need to complete the code 
-to position the new pacman image and add it to the "game" div. It is then added to the array of pacmen, which keeps track of the position and velocity of each pacman.
-You also need to make each pacman bounce off any wall it hits. 
-Start by getting at least one pacman positioned and viewable. 
+# The PacMen Exercise
 
-<img src="PacMan1.png">
+## Description
+
+A self-study-exercise I solved during the [MITx Fullstack Programming Course](https://xpro.mit.edu/courses/course-v1:xPRO+PCCx/)
+
+Multiple PacMen in the form of simply being an image - can be generated and automatically move around the screen. When they hit a wall they bounce of sort of "realistically" but stay at the same velocity.
+
+Some things I learned from the exercise:
+
+- JavaScript can be used for simple "graphical" programming.
+- A factory is simply put: Generating a whole lot of things! In this case: Making countless PacMen.
+- Rudimentary ideas to "physics programming" to make the PacMen bounce off walls.
+- How to programatically add HTML elements to a webpage.
+- How to programatically _style_ HTML elements.
+- A "shadow DOM" is a common pattern in JavaScript programming.
+
+<img src="PacMan1.png" width="10%">
+
+## How to Run
+
+[Click here to run it in your browser]().
+
+
+## Roadmap
+
+Well, I guess there is no actual roadmap for this project but here a collection of ideas that might be fun to implement:
+
+- Use alternating pictures as the image for a PacMan to simulate its mouth movement.
+
+## License
+
+Released under an MIT license, see the [LICENSE](LICENSE) within the repo for details.
