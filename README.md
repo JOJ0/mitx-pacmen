@@ -15,7 +15,7 @@ Some things I learned from the exercise:
 - How to programatically _style_ HTML elements.
 - A "shadow DOM" is a common pattern in JavaScript programming.
 
-<img src="PacMan1.png" width="10%">
+<img src="assets/PacMan1.png" width="10%">
 
 ## How to Run
 
