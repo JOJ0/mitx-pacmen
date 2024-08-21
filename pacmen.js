@@ -31,6 +31,17 @@
         newimg.style.position = 'absolute';
         newimg.src = image;
         newimg.width = 100;
+        // scale large pics
+        newimg.onload = function() {
+            var height = newimg.height;
+            var width = newimg.width;
+            console.log('The image size is '+width+'*'+height);
+            if (newimg.height >= 250) {
+                console.log('Large image, resizing...');
+                console.log(newimg.height);
+                newimg.height = 100;
+            }
+        }
         // set position
         newimg.style.left = position.x;
         newimg.style.top = position.y;
