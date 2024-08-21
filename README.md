@@ -27,8 +27,8 @@ Some things I learned from the exercise:
 
 Well, I guess there is no actual roadmap for this project but here a collection of ideas that might be fun to implement:
 
--[ ] Use alternating pictures as the image for a PacMan to simulate its mouth movement.
--[x] Add random things, instead of PacMen.
+- [ ] Use alternating pictures as the image for a PacMan to simulate its mouth movement.
+- [x] Add random things, instead of PacMen.
 
 ## License
 
