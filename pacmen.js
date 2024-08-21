@@ -3,6 +3,13 @@
         ['assets/PacMan1.png', 'assets/PacMan2.png'],
         ['assets/PacMan3.png', 'assets/PacMan4.png']
     ];
+    const pabImagesArray = [
+		'banner.jpg', 'forum_banner.jpg', 'info.gif', 'info.jpg',
+		'info_old.jpg', 'logo.jpg', 'news.gif', 'news.jpg',
+		'sc_logo.gif', 'spacer.jpg', 'spacer_hori.jpg', 'spacer_hori_old.jpg',
+		'spacer_hori_video.jpg', 'spacer_hori_video_old.jpg',
+		'spacer_linx.jpg', 'spacer_old.jpg', 'spacer_old1.jpg', 'welcome.jpg', 
+    ];
     var direction = 0;
     const pacMen = []; // This array holds all the pacmen
 
@@ -12,8 +19,9 @@
             y: Math.random() * scale
         }
     }
+
     // Factory to make a PacMan at a random position with random velocity
-    function makePac() {
+    function makePac(image) {
         // returns an object with random values scaled {x: 33, y: 21}
         let velocity = setToRandom(10); // {x:?, y:?}
         let position = setToRandom(200);
@@ -21,7 +29,7 @@
         let game = document.getElementById('game');
         let newimg = document.createElement('img');
         newimg.style.position = 'absolute';
-        newimg.src = 'assets/PacMan1.png';
+        newimg.src = image;
         newimg.width = 100;
         // set position
         newimg.style.left = position.x;
@@ -66,6 +74,19 @@
         }
     }
 
+	function getRandomPic() {
+		randomIdx = Math.floor(Math.random() * pabImagesArray.length);
+		console.log('Random index is:', randomIdx);
+		return pabImagesArray[randomIdx];
+	}
+
     function makeOne() {
-        pacMen.push(makePac()); // add a new PacMan
+        pacMen.push(makePac('assets/PacMan1.png')); // add a new PacMan
+    }
+
+    function makeOther() {
+		// Get a random pic
+		imageFilename = getRandomPic();
+		image = 'assets/pabimages/' + imageFilename;
+        pacMen.push(makePac(image)); // add the pic
     }
