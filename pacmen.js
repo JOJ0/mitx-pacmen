@@ -57,6 +57,7 @@
     }
 
     function update() {
+        console.log("Start button has been pressed");
         //loop over pacmen array and move each one and move image in DOM
         pacMen.forEach((item) => {
                 // Update existing item object (global/var)
